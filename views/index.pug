@@ -1,0 +1,49 @@
+
+html
+  head
+    title Express
+    link(rel='stylesheet' href='/stylesheets/styles.css')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jscolor/2.1.1/jscolor.min.js')
+  body
+    .column
+      br
+      br
+      button#player-x-score.player-score 0
+      br
+      h2 Player
+      #player-x-avatar.player-avatar
+        h1 O
+      br
+    .container
+      h1 Tic Tac Toe
+      br
+      div
+        span
+          label(for='#board-size-input')  Number of Board
+          input#board-size-input(size='6' type='text' placeholder='board:')
+        button#submit-button Submit
+      br
+      div
+        p(clas='continue-reset')
+          button#continue-btn Continue
+          button#draw-btn Draw
+          button#reset-btn Reset
+      div
+        p.alert
+      #timer
+      #bar-container
+        #progress-bar
+      br
+      #board.table-container
+        table.table
+          tbody
+    .column
+      br
+      br
+      button#player-o-score.player-score 0
+      br
+      h2 Player
+      #player-o-avatar.player-avatar
+        h1 X    
+    script( type='text/javascript' src='/javascripts/index.js')
+                    

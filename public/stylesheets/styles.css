@@ -1,0 +1,86 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  text-align: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.player-score {
+  font-size: 6vh;
+  border: 1px black solid;
+  width: 10vh;
+  height: 10vh;
+}
+
+.player-avatar {
+  width: 15vh;
+  height: 15vh;
+  border: 2px black solid;
+}
+
+#player-x-avatar {
+  background-color: rgb(124, 252, 0);
+}
+
+#player-o-avatar {
+  background-color: rgb(250, 128, 114);
+}
+
+.column {
+  width: 30vw;
+}
+
+.table-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.alert {
+  height: 1rem;
+}
+
+table {
+  border-collapse: collapse;
+  border: 1px solid black;
+  height: 50vh;
+  width: 50vh;
+}
+
+td {
+  text-align: center;
+  vertical-align: middle;
+  font-family: Helvetica;
+  font-size: 30px;
+  border: 1px black solid;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 5%);
+}
+#bar-container {
+  width: 50vh;
+}
+#progress-bar {
+  background: green;
+  height: 24px;
+  width: 0px;
+}
